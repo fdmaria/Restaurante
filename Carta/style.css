@@ -1,6 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Amatic+SC:wght@700&family=Antic+Slab&family=Asap+Condensed&family=Cinzel:wght@500&family=Krona+One&family=Raleway:wght@100&family=Train+One&display=swap");
 body {
   background-color: #FDF6F0;
+  border-left: thick solid #ff0000;
 }
 
 .header {
@@ -32,17 +34,64 @@ body {
   font-family: "Antic Slab", serif;
 }
 
-.categoria {
+.categoria-p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
+  margin: 0 1em .5em 1em;
+}
+
+.categoria-p__nombre {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: -0.8em;
+  font-weight: 800;
+}
+
+.categoria-p__descripcion {
+  font-family: "Antic Slab", serif;
+  margin-bottom: 0;
+}
+
+.categoria-p__precios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.categoria-p__precios__n__tamaño {
+  margin-bottom: -0.8em;
+  font-family: "Asap Condensed", sans-serif;
+}
+
+.categoria-p__precios__n__precio {
+  font-family: "Raleway", sans-serif;
+}
+
+.categoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 1.5em 1.5em 1.5em;
 }
 

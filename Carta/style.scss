@@ -16,9 +16,12 @@ $c2:white;
 $c3: #FDF6F0;
 $c4: #76323F;
 $c5: #444444;
+$c6: #ff0000;
+$c7: linear-gradient(red, yellow);
 
 body{
     background-color: $c3;
+    border-left: thick solid $c6;
 }
 
 .header{
@@ -39,10 +42,42 @@ body{
     }
 }
 
+.categoria-p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    //align-items: center; 
+    text-align: center;   
+    margin: 0 1em .5em 1em;
+    &__nombre{
+        font-family: $ff7;
+        margin-bottom: -0.8em;
+        font-weight: 800;        
+    }
+    &__descripcion{
+        font-family: $ff3;
+        margin-bottom: 0;
+    }
+    &__precios{
+        display: flex;
+        justify-content: space-between;
+        
+        &__n{
+            &__tamaño{
+                margin-bottom: -0.8em;
+                font-family: $ff4;
+            }
+            &__precio{
+                font-family: $ff7;
+            }
+        }
+    }
+}
 .categoria{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
     margin: 0 1.5em 1.5em 1.5em;
     &__nombre{
         color: $c1;
