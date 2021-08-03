@@ -1,5 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&family=Amatic+SC:wght@700&family=Antic+Slab&family=Asap+Condensed&family=Cinzel:wght@500&family=Lexend+Zetta&family=Raleway:wght@100&family=Train+One&display=swap");
-.cabecera {
-  color: #181717;
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Amatic+SC:wght@700&family=Antic+Slab&family=Asap+Condensed&family=Cinzel:wght@500&family=Krona+One&family=Raleway:wght@100&family=Train+One&display=swap");
+body {
+  background-color: #FDF6F0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
+  margin-top: 1em;
+}
+
+.header__title {
+  color: #76323F;
+  font-family: "Amatic SC", cursive;
+}
+
+.header__tipo {
+  margin-top: 0.5em;
+  color: #76323F;
+  font-family: "Antic Slab", serif;
+}
+
+.categoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 1.5em 1.5em 1.5em;
+}
+
+.categoria__nombre {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.2em;
+}
+
+.categoria__prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.categoria__prod__p1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 0%;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: -0.8em;
+}
+
+.categoria__prod__p1__nombre {
+  color: #76323F;
+}
+
+.categoria__prod__p1__precio {
+  color: black;
+}
+
+.categoria__prod__descripcion {
+  margin-top: 0;
+  color: #444444;
+  font-family: "Antic Slab", serif;
 }
 /*# sourceMappingURL=style.css.map */

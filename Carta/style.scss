@@ -1,24 +1,75 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Amatic+SC:wght@700&family=Antic+Slab&family=Asap+Condensed&family=Cinzel:wght@500&family=Lexend+Zetta&family=Raleway:wght@100&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Amatic+SC:wght@700&family=Antic+Slab&family=Asap+Condensed&family=Cinzel:wght@500&family=Krona+One&family=Raleway:wght@100&family=Train+One&display=swap');
 
 
-$font-family1: 'Allura', cursive;
-$font-family2: 'Amatic SC', cursive;
-$font-family3: 'Antic Slab', serif;
-$font-family4: 'Asap Condensed', sans-serif;
-$font-family5: 'Cinzel', serif;
-$font-family6: 'Lexend Zetta', sans-serif;
-$font-family7: 'Raleway', sans-serif;
-$font-family8: 'Train One', cursive;
+$ff1: 'Cutive Mono', monospace;
+$ff2: 'Amatic SC', cursive;
+$ff3: 'Antic Slab', serif;
+$ff4: 'Asap Condensed', sans-serif;
+$ff5: 'Cinzel', serif;
+$ff6: 'Krona One', sans-serif;
+$ff7: 'Raleway', sans-serif;
+$ff8: 'Train One', cursive;
 
-$color-fondo1:beige;
-$color-fondo2:ghostwhite;
-$color-fondo3: black;
+$c1: black;
+$c2:white;
+$c3: #FDF6F0;
+$c4: #76323F;
+$c5: #444444;
 
-$color-title: #76323F;
+body{
+    background-color: $c3;
+}
 
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0;
+    margin-top: 1em;
+    &__title{
+        color: $c4;
+        font-family: $ff2;
+    }
+    &__tipo{
+        margin-top: 0.5em;
+        color: $c4;
+        font-family: $ff3;
+    }
+}
 
-
-.cabecera{
-    color: rgb(24, 23, 23);
+.categoria{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin: 0 1.5em 1.5em 1.5em;
+    &__nombre{
+        color: $c1;
+        font-family: $ff7;
+        margin-bottom: 0.2em;
+    }
+    &__prod{
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        &__p1{
+            display: flex;
+            justify-content: space-between; 
+            line-height: 0%; 
+            font-family: $ff7; 
+            margin-bottom: -0.8em;        
+            &__nombre{
+                color: $c4;                
+            }
+            &__precio{
+                color: $c1;
+            }
+        }
+        &__descripcion{
+            margin-top: 0;
+            color: $c5;
+            font-family: $ff3;
+        }
+    }
 }
